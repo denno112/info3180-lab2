@@ -11,6 +11,7 @@ import datetime
 def profile():
     date_joined = format_date_joined()
     """Render the website's profile page."""
+    "sets the date on the profile page"
     return render_template('profile.html', date= date_joined)
 
 def format_date_joined():
@@ -26,7 +27,7 @@ def home():
 @app.route('/about/')
 def about():
     """Render the website's about page."""
-    return render_template('about.html', name="Mary Jane")
+    return render_template('about.html', name="Dennis Morrison")
 
 
 ###
