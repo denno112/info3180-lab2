@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% block main %}
+    <div class="Profile-page">
+        <div class = "top-section">
+            <img
+            class="profile-img"
+            src="{{ url_for('static', filename='images/profile.png' )}}" alt="">
+            <H3>Dennis Morrison</H3>
+            <p>@denno.jm <br />Kingston, Jamaica <br />{{date}}</p>
+        </div>
+        <div class="bottom-section">
+            <p class="para">
+                I am a web3 enthusiast who is interested in blockchain development, and cloud architecture.
+            </p>
+            <div class="social">
+            <div class="post">
+                <p class="follow">3</p>
+                <p class="stat_type">Posts</p>
+            </div>
+            <div>
+                <p class="follow">1222</p>
+                 <p class="stat_type">Following</p>
+            </div>
+            <div>
+                <p class="follow">3,706</p>
+                <p class="stat_type">Followers</p>
+            </div>
+            </div>
+            <div class="follow-btn-div">
+                <button class="follow-btn">Follow</button>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
